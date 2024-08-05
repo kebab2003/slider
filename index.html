@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="slider.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <section class="slider">
+        <p class="slider__title">
+            РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
+        </p>
+        <div class="slider__brands swiper-container mySwiper">
+            <ul class="slider__list swiper-wrapper">
+                <li class="slider__item slider__item-lenovo swiper-slide">
+                    <a href="#" class="slider__link slider__link-lenovo"></a>
+                </li>
+                <li class="slider__item slider__item-samsung swiper-slide">
+                    <a href="#" class="slider__link slider__link-samsung"></a>
+                </li>
+                <li class="slider__item slider__item-apple swiper-slide">
+                    <a href="#" class="slider__link slider__link-apple"></a>
+                </li>
+                <li class="slider__item slider__item-viewsonic swiper-slide">
+                    <a href="#" class="slider__link slider__link-viewsonic"></a>
+                </li>
+                <li class="slider__item slider__item-bosch swiper-slide">
+                    <a href="#" class="slider__link slider__link-bosch"></a>
+                </li>
+                <li class="slider__item slider__item-hp swiper-slide">
+                    <a href="#" class="slider__link slider__link-hp"></a>
+                </li>
+                <li class="slider__item slider__item-acer slider__item-hidden-tablet swiper-slide">
+                    <a href="#" class="slider__link slider__link-acer"></a>
+                </li>
+                <li class="slider__item slider__item-sony slider__item-hidden-tablet swiper-slide">
+                    <a href="#" class="slider__link slider__link-sony"></a>
+                </li>
+                <li class="slider__item slider__item-lenovo slider__item-hidden-pc swiper-slide">
+                    <a href="#" class="slider__link slider__link-lenovo"></a>
+                </li>
+                <li class="slider__item slider__item-samsung slider__item-hidden-pc swiper-slide">
+                    <a href="#" class="slider__link slider__link-samsung"></a>
+                </li>
+                <li class="slider__item slider__item-apple slider__item-hidden-pc swiper-slide">
+                    <a href="#" class="slider__link slider__link-apple"></a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+
+
+        <div class ="slider__more-info">
+            <button type="button" class="slider__more-info-text">Показать все</button>
+          </div>
+
+    </section>
+    
+
+
+
+    
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          on: {
+        resize: function enableOnlyMobile(swiper){
+            
+            if(767 < window.innerWidth){
+                swiper.disable()
+                
+            }else{
+                swiper.enable()
+            }
+        },
+    }
+        });
+      </script>
+
+<script src="script.js"></script>
+</body>
+</html>

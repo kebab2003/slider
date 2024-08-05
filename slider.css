@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #1B1C21;
+    font-family: "TT Lakes Medium", "TT Lakes Bold";
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F8F8F8;
+
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #7E7E82;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/TTLakes-Medium.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(fonts/TTLakes-Bold.woff) format(woff);
+}
+
+
+
+
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: auto;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+.slider__title {
+    color: #7E7E82;
+    padding: 16px;
+    background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+}
+
+
+
+
+
+
+
+.slider__list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 16px;
+
+    margin-top: 16px;
+
+}
+
+
+
+.slider__link-lenovo {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/lenovo.png) no-repeat 16px 50%;
+}
+
+.slider__link-samsung {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/samsung.png) no-repeat 16px 50%;
+}
+
+.slider__link-apple {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/apple.png) no-repeat 16px 50%;
+}
+
+.slider__link-viewsonic {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/viewsonic.png) no-repeat 16px 50%;
+}
+
+.slider__link-bosch {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/bosch.png) no-repeat 16px 50%;
+}
+
+.slider__link-hp {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/hp.png) no-repeat 16px 50%;
+}
+
+.slider__link-acer {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/acer.png) no-repeat 16px 50%;
+}
+
+.slider__link-sony {
+    background: url(images/arrow.svg) no-repeat 170px 50%,
+        url(images/sony.png) no-repeat 16px 50%;
+}
+
+
+.slider__item {
+    width: 240px;
+    margin: 0 !important;
+
+}
+
+
+
+.slider__link {
+
+    display: flex;
+    width: 100%;
+    height: 72px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+
+.slider__brands {
+    position: relative;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    margin-left: 16px;
+
+}
+
+.slider__brands::after {
+    width: 20px;
+    height: 60px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: auto;
+
+}
+
+
+
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+
+
+}
+
+
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+    width: 12px;
+    height: 12px;
+
+
+}
+
+.slider__more-info {
+    display: none;
+}
+
+
+
+/*----------PLANSHET-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px) and (max-width: 1119px) {
+    .slider__list {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        column-gap: 24px;
+        row-gap: 16px;
+
+
+    }
+
+    .swiper-container {
+        width: auto;
+        height: 100%;
+    }
+
+    .slider__item-hidden-tablet,
+    .slider__item-hidden-pc {
+        display: none;
+    }
+
+    .slider__item {
+        width: 224px;
+        margin: 0 !important;
+
+    }
+
+    .slider__brands {
+        position: relative;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    .slider__more-info {
+        display: flex;
+        background: url(images/more-info.svg) no-repeat 0 3px;
+        margin-left: 40px;
+    }
+
+    .slider__more-info-text {
+        margin-left: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .slider__title {
+        padding-left: 24px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*------PC-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1120px) {
+    .slider__list {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        column-gap: 32px;
+        row-gap: 16px;
+
+
+    }
+
+    .slider__item-hidden-pc {
+        display: none;
+    }
+
+
+    .slider__brands {
+        position: relative;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+
+
+    .slider__more-info {
+        display: flex;
+        background: url(images/more-info.svg) no-repeat 0 3px;
+        margin-left: 40px;
+    }
+
+    .slider__more-info-text {
+        margin-left: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+
+    .slider__title {
+        padding-left: 32px;
+    }
+}
